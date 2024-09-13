@@ -2,8 +2,9 @@ package com.TryLog.ControleFrota;
 
 public class Moto extends Veiculo{
 
-  public Moto(String placa, int anoFabricacao, String combustivel) {
-    super(placa, anoFabricacao, combustivel);
+  public Moto(String placa, int anoFabricacao) {
+    super(placa, anoFabricacao);
+    this.setCombustivel("Gasolina");
   }
 
   @Override

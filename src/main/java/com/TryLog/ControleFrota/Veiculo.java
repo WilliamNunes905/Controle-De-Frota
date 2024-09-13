@@ -8,10 +8,9 @@ public abstract class Veiculo {
   private String combustivel;
   private ArrayList<String> abastecimento;
 
-  public Veiculo(String placa, int anoFabricacao, String combustivel) {
+  public Veiculo(String placa, int anoFabricacao) {
     this.placa = placa;
     this.anoFabricacao = anoFabricacao;
-    this.combustivel = combustivel;
     this.abastecimento = new ArrayList<>();
   }
 
@@ -22,7 +21,7 @@ public abstract class Veiculo {
     for (String abastecimento : this.abastecimento) {
       System.out.println("|  " + abastecimento + "  |");
     }
-    System.out.println("##---------------------------##########------------------------------##");
+    System.out.println("##----------------------####--####------------------------##");
   }
 
   public String getPlaca() {
