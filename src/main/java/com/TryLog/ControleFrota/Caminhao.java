@@ -16,6 +16,10 @@ public class Caminhao extends Veiculo implements Transportador {
     this.getAbastecimento().add(String.format("Local: base, Motorista: %s, Valor: %.2f", motorista, valor));
   }
 
+  public void abastecer(String motorista, double valor) {
+    this.getAbastecimento().add(String.format("Local: base, Motorista: %s, Valor: %.2f", motorista, valor));
+  }
+
   @Override
   public void transportar(String origem, String destino) {
     this.getViajem().add(String.format("Veiculo de placa %s, vai transportar a carga de %s para %s.", this.getPlaca(), origem, destino));

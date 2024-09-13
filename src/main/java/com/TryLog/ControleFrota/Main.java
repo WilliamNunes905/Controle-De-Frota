@@ -11,12 +11,12 @@ public class Main {
     carro1.abastecer("Posto 4", "paulo", 50.00);
     carro1.listaAbastecimento();
 
-    caminhao1.abastecer(null, "João", 2500.00);
-    caminhao1.abastecer(null, "João", 2500.00);
+    caminhao1.abastecer("João", 2500.00);
+    caminhao1.abastecer("João", 2500.00);
     caminhao1.transportar("Canoas", "São Paulo");
 
-    caminhao1.abastecer(null, "Ana", 1500.00);
-    caminhao1.abastecer(null, "Ana", 3000.00);
+    caminhao1.abastecer("Ana", 1500.00);
+    caminhao1.abastecer("Ana", 3000.00);
     caminhao1.transportar("São Paulo", "Rio de Janeiro");
 
     caminhao1.listaAbastecimento();
